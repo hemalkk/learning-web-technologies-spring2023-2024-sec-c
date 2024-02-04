@@ -1,0 +1,40 @@
+<!-- Product Table (Parent) Start -->
+<products>
+
+<!-- Product 1, (child table) Start -->
+    <product p="1">
+        <id>11</id>
+        <name>Samsung</name>
+        <!-- Unit Price = up -->
+        <up>35000</up>
+        <stock>50</stock>
+        <!-- status = stat -->
+        <stat>1</stat>
+    </product>
+    <!-- Product 1, (child table) End -->
+<!-- Product 2, (child table) Start-->
+    <product p="2">
+        <id>20</id>
+        <name>HTC</name>
+        <!-- Unit Price = up -->
+        <up>65300</up>
+        <stock>35</stock>
+        <!-- status = stat -->
+        <stat>0</stat>
+    </product>
+    <!-- Product 2, (child table) End-->
+
+    <!-- Product 3, (child table) Start-->
+    <product p="3">
+        <id>23</id>
+        <name>Nokia</name>
+        <!-- Unit Price = up -->
+        <up>25100</up>
+        <stock>100</stock>
+        <!-- status = stat -->
+        <stat>1</stat>
+    </product>
+      <!-- Product 3, (child table) End-->
+    
+</products>
+<!-- Product Table (Parent) End -->
