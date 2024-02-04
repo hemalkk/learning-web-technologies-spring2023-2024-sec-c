@@ -1,0 +1,50 @@
+<!-- employees Table (Parent) Start -->
+<employees>
+
+<!-- employee 1, (child table) Start -->
+    <employee e="1">
+        <id>23</id>
+        <name>John Carter</name>
+        <!-- Admission Date Format: YYYY-MM-DD -->
+        <admission>
+
+        <year>2015 </year>
+        <date>12</date>
+        <month>12</month>
+     
+        </admission> 
+    </employee>
+    <!--employee 1, (child table) End -->
+
+<!-- employee 2, (child table) Start-->
+    <employee e="2">
+        <id>29</id>
+        <name>Bob Marshal</name>
+        <!-- Admission Date Format: YYYY-MM-DD -->
+        <admission>
+
+        <year>1999</year>
+        <date>12</date>
+        <month>01</month>
+
+        </admission>
+    </employee>
+    <!-- employee 2, (child table) End-->
+
+    <!-- employee 3, (child table) Start-->
+    <employee e="3">
+        <id>35</id>
+        <name>Clark Kent</name>
+        <!-- Admission Date Format: YYYY-MM-DD -->
+      <admission>
+      
+        <year>2005</year>
+        <date>17</date>
+        <month>06</month>
+
+        </admission>
+    </employee>
+    <!-- employee 3, (child table) End-->
+    
+</employees>
+<!-- employees Table (Parent) End -->

@@ -1,0 +1,63 @@
+<!-- employees Table (Parent) Start -->
+<employees>
+
+<!-- employee 1, (child table) Start -->
+    <employee e="1">
+        <id>1</id>
+        <name>John Doe</name>
+        <!-- Address Format: FLat No.,House NO., Road No., Area, City -->
+        <address>
+        <flat> </flat>
+        <house>38</house>
+        <road>03</road>
+        <area>Banani</area>
+        <city>Dhaka</city>
+        </address>
+        <!-- Department = dpt -->
+        <dpt>Sales</dpt>
+        <!-- Salary=sal -->
+        <sal>$20000</sal>
+      
+    </employee>
+    <!--employee 1, (child table) End -->
+
+<!-- employee 2, (child table) Start-->
+    <employee e="2">
+        <id>11</id>
+        <name>Mark Zuckerberg</name>
+        <!-- Address Format: FLat No.,House NO., Road No., Area, City -->
+        <address>
+        <flat>A/1</flat>
+        <house>20</house>
+        <road>18</road>
+        <area>Mirpur</area>
+        <city>Dhaka</city>
+        </address>
+        <!-- Department = dpt -->
+        <dpt>Accounts</dpt>
+         <!-- Salary=sal -->
+        <sal>$12000</sal>
+    </employee>
+    <!-- employee 2, (child table) End-->
+
+    <!-- employee 3, (child table) Start-->
+    <employee e="3">
+        <id>3</id>
+        <name>Ala Voski</name>
+        <!-- Address Format: FLat No.,House NO., Road No., Area, City -->
+        <address>
+        <flat></flat>
+        <house>38</house>
+        <road>03</road>
+        <area>Motijheel</area>
+        <city></city>
+        </address>
+        <!-- Department = dpt -->
+        <dpt>Human Resource</dpt>
+         <!-- Salary=sal -->
+        <sal>$30000</sal>
+    </employee>
+      <!--employee 3, (child table) End-->
+    
+</employees>
+<!-- employees Table (Parent) End -->
