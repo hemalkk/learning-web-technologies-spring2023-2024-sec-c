@@ -35,18 +35,17 @@ function signIn($userNameOrEmail, $password) {
 
 function getUserData($userNameOrEmail) {
     $con = dbConnect();
-    
-    // Query to select user based on username or email
+
     $sql = "SELECT * FROM users WHERE userName = '$userNameOrEmail' OR email = '$userNameOrEmail'";
-    
     $result = mysqli_query($con, $sql);
-    
+
     if ($result && mysqli_num_rows($result) > 0) {
         return mysqli_fetch_assoc($result);
     } else {
-        return null;
+        return null; // Return null if no user found
     }
 }
+
 
 
 // Update Profile
