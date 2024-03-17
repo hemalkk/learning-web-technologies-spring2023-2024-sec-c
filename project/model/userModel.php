@@ -33,18 +33,21 @@ function signIn($userNameOrEmail, $password) {
 
 // Get user data
 
-function getUserData($userName)
-{
+function getUserData($userNameOrEmail) {
     $con = dbConnect();
-    $sql = "SELECT * FROM users WHERE userName = '$userName'";
+    
+    // Query to select user based on username or email
+    $sql = "SELECT * FROM users WHERE userName = '$userNameOrEmail' OR email = '$userNameOrEmail'";
+    
     $result = mysqli_query($con, $sql);
-
-    if ($result) {
+    
+    if ($result && mysqli_num_rows($result) > 0) {
         return mysqli_fetch_assoc($result);
     } else {
-        return false;
+        return null;
     }
 }
+
 
 // Update Profile
 function updateUserProfile($userName, $updatedData)
