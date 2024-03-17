@@ -6,14 +6,16 @@ require_once('../model/userModel.php');
 
 // Check if the user is logged in
 if (!isset($_SESSION['username']) || !isset($_COOKIE['flag'])) {
-    // Add some debug information to identify the issue
-    echo 'Not logged in. Redirecting to sign-in page...';
+    // Redirect to the sign-in page
+    header('Location: ../view/signIn.php');
     exit();
 }
 
-// Get user data
-$userName = $_SESSION['username'];
-$userData = getUserData($userName);
+// Get the login identifier (username or email)
+$userNameOrEmail = $_SESSION['username'];
+
+// Get user data based on the login method
+$userData = getUserData($userNameOrEmail);
 
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -27,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'email' => $_POST['email'],
     );
 
-    if (updateUserProfile($userName, $updatedData)) {
+    if (updateUserProfile($userNameOrEmail, $updatedData)) {
         // Redirect to view profile page after update
         header('Location: ../view/viewProfile.php');
         exit();
