@@ -63,7 +63,7 @@
     </div>
 
     <!-- Sign Out -->
-    <form method="post" action="signOut.php" class="mt-4">
+    <form method="post" action="../controller/signOut.php" class="mt-4">
         <button type="submit" class="bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600 transition duration-300">Sign Out</button>
     </form>
 
