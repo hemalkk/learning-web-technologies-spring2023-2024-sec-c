@@ -4,7 +4,7 @@ require_once('../model/userModel.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!isset($_SESSION['username']) || !isset($_COOKIE['flag'])) {
-        header('location: signIn.php');
+        header('location: ../view/signIn.php');
         exit();
     }
 
