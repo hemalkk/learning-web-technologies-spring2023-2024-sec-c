@@ -26,7 +26,7 @@
                 Or
                 <!-- Sign In link -->
                 <a href="signIn.php"
-                    class="font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:underline transition ease-in-out duration-150">
+                    class="font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:underline transition ease-in-out duration-150" target="_blank">
                     Sign In to your account
                 </a>
             </p>
