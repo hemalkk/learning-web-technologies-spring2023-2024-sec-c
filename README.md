@@ -1,2 +1,1 @@
-# learning-web-technologies-spring2023-2024-sec-c
-01616-Web Technologies [C] 
+This repository is an essential part of our journey through the fascinating world of Web Technologies. It is meticulously curated to support and enhance our learning experience in this course. The repository will feature a variety of content like: Tasks,Practice,Project.
